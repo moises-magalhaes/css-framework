@@ -11002,6 +11002,15 @@ h5 {
           box-shadow: 1px 4px 5px 1px rgba(10, 10, 10, 0.08);
 }
 
+.accordion .card__header__title {
+  font-family: "lato", sans-serif;
+}
+
+.accordion .card__header__title button {
+  color: #e92569 !important;
+  font-weight: bold !important;
+}
+
 .accordion .card .collapse {
   border-top: solid 2px #e92569;
   -webkit-transition: border 0.02s;
@@ -11047,6 +11056,8 @@ h5 {
 .nav-link {
   padding-left: 40px;
   padding-right: 40px;
+  color: #e92569;
+  font-weight: bold;
 }
 
 .tab-pane {
@@ -11112,9 +11123,13 @@ h5 {
   border: solid 1px #e92569;
 }
 
-.nav-pages__pagination__item--active__link {
+.nav-pages__pagination__item--active.active {
   background-color: #e92569 !important;
+}
+
+.nav-pages__pagination__item--active__link {
   color: #ffffff;
+  background-color: #e92569 !important;
 }
 
 .row__card__item {

@@ -6,6 +6,15 @@
 	box-shadow: 1px 4px 5px 1px rgba($navbar-light-color, 0.08);
 
 	.card {
+		&__header {
+			&__title {
+				font-family: "lato", sans-serif;
+				button {
+					color: $primary !important;
+					font-weight: bold !important;
+				}
+			}
+		}
 		.collapse {
 			border-top: solid 2px $primary;
 			transition: border 0.02s;

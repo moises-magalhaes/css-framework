@@ -4,12 +4,16 @@
 			&__link {
 				color: $primary;
 				border: solid 1px $primary;
+				// background-color: $primary;
 			}
 		}
 		&__item--active {
-			&__link {
+			&.active {
 				background-color: $primary !important;
+			}
+			&__link {
 				color: $light;
+				background-color: $primary !important;
 			}
 		}
 	}
