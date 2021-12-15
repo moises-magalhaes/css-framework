@@ -1,0 +1,26 @@
+.accordion {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+	border-radius: 10em;
+	box-shadow: 1px 4px 5px 1px rgba($navbar-light-color, 0.08);
+
+	.card {
+		.collapse {
+			border-top: solid 2px $primary;
+			transition: border 0.02s;
+			transition-timing-function: ease-in;
+		}
+		&__body__icons {
+			display: flex;
+			margin-top: 25px;
+			align-items: center;
+			justify-content: center;
+
+			&__icon {
+				padding-right: 25px;
+				color: $navbar-light-color;
+			}
+		}
+	}
+}

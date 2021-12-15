@@ -1,0 +1,130 @@
+.navbar {
+	padding-left: 0;
+	padding-right: 0;
+	background-color: $background-nav !important;
+
+	&__container__logo {
+		font-family: "Playfair Display", serif;
+		font-size: 32px;
+		color: $primary !important;
+		font-style: italic;
+		font-weight: 600;
+		padding-left: 1rem;
+		margin-left: 30px;
+	}
+
+	&__container__toggler {
+		border: none;
+		padding-right: 1rem;
+		margin-right: 30px;
+	}
+}
+
+.collapse {
+	z-index: 1;
+	box-shadow: 1px 4px 5px 1px rgba($navbar-light-color, 0.08);
+
+	&__menu__item {
+		&__link {
+			padding-left: 3rem !important;
+			padding-right: 1rem !important;
+			font-size: 15px;
+		}
+	}
+
+	&__menu__item--active {
+		background-color: $light !important;
+	}
+}
+
+.search {
+	margin-top: 60px !important;
+	margin-bottom: 60px !important;
+
+	margin-right: 50px;
+	margin-left: 1rem;
+
+	&__box {
+		background-color: $background-light;
+		color: white;
+		border: none;
+		padding: 1.5em !important;
+	}
+
+	&__button {
+		position: absolute;
+		right: 1rem;
+		margin-right: 30px;
+		background-color: $primary;
+		color: $light;
+		border: none !important;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+		padding-top: 11px;
+		padding-bottom: 11px;
+		:hover {
+			background-color: $secondary !important;
+			color: white;
+		}
+	}
+}
+
+@media (min-width: 540px) {
+	.navbar {
+		padding-right: 0;
+		&__container {
+			max-width: 750px;
+			margin-left: 0;
+			margin-right: 0;
+
+			.search__box {
+				width: 100%;
+			}
+		}
+	}
+	.collapse {
+		.search {
+			display: flex;
+		}
+
+		&__menu {
+			margin-left: 0;
+		}
+	}
+}
+
+@media (min-width: 765px) {
+	.navbar {
+		padding-right: 1rem;
+
+		&__container {
+			max-width: 100%;
+			padding-left: 4rem;
+			padding-right: 4rem;
+
+			&__logo {
+				margin-left: 0;
+				padding: 0;
+			}
+		}
+	}
+
+	.collapse {
+		box-shadow: none;
+
+		.search {
+			margin-top: 1rem !important;
+			margin-bottom: 1rem !important;
+
+			&__box {
+				position: absolute;
+				right: 50px;
+				width: 15% !important;
+			}
+		}
+
+		&__menu {
+			margin-left: 60px;
+		}
+	}
+}

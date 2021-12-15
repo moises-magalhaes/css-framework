@@ -1,0 +1,24 @@
+.carousel {
+	&__Content {
+		&__indicator {
+			width: 15px;
+			height: 15px;
+			margin: 0 5px;
+			border-radius: 50%;
+		}
+	}
+
+	&__item {
+		background-size: cover;
+		background-position: center center;
+	}
+	&__carousel__inner {
+		max-height: 600px;
+	}
+}
+
+@media (min-width: 992px) {
+	.home-block .btn {
+		width: 50%;
+	}
+}

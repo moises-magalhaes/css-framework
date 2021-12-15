@@ -1,0 +1,45 @@
+.tabs {
+	background-color: $light;
+	border-radius: 15px;
+}
+
+.nav-tabs {
+	border-bottom: none;
+	.active {
+		border-radius: 5px 5px 0 0;
+		border: 1px solid $background-nav;
+		box-shadow: 1px 0px 0px 0px rgba($navbar-light-color, 0.08);
+	}
+}
+
+.nav-link {
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+.tab-pane {
+	background-color: $light;
+	border-radius: 0 20px 20px 20px;
+	padding: 40px;
+	border: 1px solid $background-nav;
+	box-shadow: 1px 4px 5px 1px rgba($navbar-light-color, 0.08);
+
+	&__element {
+		display: flex;
+		flex-direction: row;
+	}
+	&__content {
+		padding-left: 20px;
+
+		&__icons {
+			align-items: end;
+			margin-bottom: 20px;
+			color: $navbar-light-color;
+			font-size: 25px;
+
+			i {
+				margin-left: 30px;
+			}
+		}
+	}
+}

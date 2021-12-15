@@ -1,0 +1,49 @@
+.row {
+	&__form {
+		&__contact-form {
+			background-color: $background-nav;
+			padding: 30px;
+			box-shadow: 1px 4px 5px 1px rgba($navbar-light-color, 0.08);
+
+			&__group {
+				&__form-control {
+					background-color: $background-light;
+					color: white;
+					border: none;
+					padding: 1.5em;
+				}
+				&__text {
+					color: $light;
+					background-color: $secondary;
+					border: none;
+					border-top-right-radius: 0;
+					border-bottom-right-radius: 0;
+				}
+				&__button {
+					background-color: $description;
+					border: none;
+					width: 100%;
+				}
+				&__checkbox[type="checkbox"] {
+					-webkit-appearance: none;
+					-moz-appearance: none;
+					cursor: pointer;
+					background-color: $primary;
+					border: none;
+					width: 30px;
+					height: 30px;
+					margin-right: 20px;
+					border-radius: 5px;
+				}
+				&__paragraph {
+					margin-left: 20px;
+				}
+			}
+		}
+	}
+}
+
+.row .break {
+	width: 100%;
+	height: 10px;
+}

@@ -1,0 +1,44 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+}
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "Lato", sans-serif;
+	background-image: radial-gradient(
+		circle at center,
+		map-get($colours, white),
+		map-get($colours, grey)
+	);
+	color: $description;
+	display: flex;
+	flex-direction: column;
+}
+
+footer {
+	flex-shrink: 0;
+	background-color: $light;
+	margin-top: 2rem;
+	font-size: 1em;
+	padding: 0.5em;
+	.container {
+		display: flex;
+		justify-content: space-between;
+		&__icons {
+			&__icon {
+				color: $description;
+				font-size: 2em !important;
+			}
+		}
+	}
+}
+
+
+.wrapper {
+	flex: 1 0 auto;
+}

@@ -1,0 +1,28 @@
+.row {
+	&__list {
+		&__group {
+			border-radius: 10px;
+			margin-bottom: 2em;
+
+			&__inner {
+				border: none;
+				background: none;
+				display: flex;
+
+				&__icon {
+					font-size: 30px;
+					margin-right: 30px;
+				}
+			}
+			&__inner:last-child {
+				display: block;
+				margin-left: 67px;
+			}
+		}
+	}
+}
+
+.fa-phone {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+}
