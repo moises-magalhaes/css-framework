@@ -10889,6 +10889,7 @@ h5 {
   border: none;
   padding-right: 1rem;
   margin-right: 30px;
+  border-color: none;
 }
 
 .collapse {
@@ -10962,6 +10963,16 @@ h5 {
 }
 
 @media (min-width: 765px) {
+  .navbar-expand-md .navbar-collapse {
+    display: none !important;
+  }
+  .navbar-expand-md .navbar-toggler {
+    display: block;
+    border: none;
+  }
+}
+
+@media (min-width: 992px) {
   .navbar {
     padding-right: 1rem;
   }

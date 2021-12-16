@@ -17,6 +17,7 @@
 		border: none;
 		padding-right: 1rem;
 		margin-right: 30px;
+		border-color: none;
 	}
 }
 
@@ -94,6 +95,35 @@
 }
 
 @media (min-width: 765px) {
+	.navbar-expand-md .navbar-collapse {
+		display: none !important;
+	}
+
+	.navbar-expand-md .navbar-toggler {
+		display: block;
+		border: none;
+	}
+	// .collapse {
+	// 	box-shadow: none;
+
+	// 	.search {
+	// 		margin-top: 1rem !important;
+	// 		margin-bottom: 1rem !important;
+
+	// 		&__box {
+	// 			position: absolute;
+	// 			right: 50px;
+	// 			width: 15% !important;
+	// 		}
+	// 	}
+
+	// 	&__menu {
+	// 		margin-left: 60px;
+	// 	}
+	// }
+}
+
+@media (min-width: 992px) {
 	.navbar {
 		padding-right: 1rem;
 
@@ -108,7 +138,6 @@
 			}
 		}
 	}
-
 	.collapse {
 		box-shadow: none;
 
